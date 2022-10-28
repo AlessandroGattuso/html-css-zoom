@@ -2,11 +2,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
+
+  color: rgb(237, 237, 237);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
 }
 
 body{
   background-color: black;
+}
+
+header,
+footer{
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
 }
 
 .container{
@@ -18,24 +29,13 @@ body{
   width: 100%;
   display: flex;
 }
-
-button{
-  cursor: pointer;
-}
-/* Utils */
-  .cursor-pointer{
-
-  }
+  
 /*<----->*/
 
 /* Header */
   header{
-    width: 100vw;
     font-weight: 600;
-    position: fixed;
     height: 40px;
-    display: flex;
-    align-items: center;
   }
 
   header .row{
@@ -54,31 +54,101 @@ button{
     background-color: rgb(118,120,113);
     border-radius: 5px;
   }
+
+  button{
+    cursor: pointer;
+  }
 /*<----->*/
 
 /* Main*/
   main{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 50px);
   }
 /*<----->*/
 
 /* Footer*/
   footer{
-    height: 80px;
-    display: flex;
-    align-items: center;
+    height: 50px;
     background-color: rgb(34,34,34);
   }
 
   footer .row{
-    height: inherit;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 
   footer .col{
     display: flex;
-    height: inherit;
+    column-gap: 15px;
   }
 
+  .col-sm{
+    justify-content: flex-start;
+    width: 30%;
+  }
 
+  .col-lg{
+    justify-content: center;
+    width: 40%;
+  }
+
+  .icon-container{
+    height: 30px;
+    display: flex;
+  }
+
+  footer i{
+    font-size: 20px;
+  }
+  
+  .icon{
+    text-align: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+  }
+
+  .text{
+    width: 50px;
+  }
+
+  .arrow-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+
+  .arrow-head{
+    font-size: 10px;
+  }
 /*<----->*/
+
+/* Utils */
+.ml-10{
+  margin-left: 10px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.jc-flex-end{
+  justify-content: flex-end;
+}
+
+.green{
+  color: green;
+}
+
+.cg-10{
+  column-gap: 10px;
+}
+
+.w-100{
+  width: 100px;
+}
