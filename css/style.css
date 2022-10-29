@@ -67,7 +67,7 @@ footer{
 /* Main*/
   main{
     padding: 50px 0;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 40px);
   }
 
   main .container{
@@ -107,7 +107,7 @@ footer{
 
 /* Footer*/
   footer{
-    height: 60px;
+    height: 40px;
     background-color: rgb(34,34,34);
   }
 
@@ -137,7 +137,7 @@ footer{
   }
 
   footer i{
-    font-size: 20px;
+    font-size: 15px;
   }
   
   .icon{
